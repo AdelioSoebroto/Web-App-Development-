@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Latihan WEB Bersama Pak Aman</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0e4e4;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+      }
+
+      h1 {
+        color: #333;
+        background-color: #f7f7f7;
+        padding: 20px;
+        margin: 0;
+      }
+
+      p {
+        font-size: 18px;
+        color: #666;
+      }
+
+      button {
+        background-color: #4caf50;
+        color: white;
+        font-size: 16px;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #45a049;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Apa yang Dapat Dilakukan JavaScript?</h1>
+    <p id="demo">Ketik tombol berikut untuk merubah konten.</p>
+    <button type="button" onclick="changeText()">Click Me!</button>
+
+    <script>
+      function changeText() {
+        document.getElementById("demo").innerHTML =
+          "Selamat Datang di JavaScript!";
+      }
+    </script>
+  </body>
+</html>

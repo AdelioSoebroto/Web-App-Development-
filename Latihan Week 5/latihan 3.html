@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>What can JavaScript do?</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        text-align: center;
+      }
+
+      h1 {
+        color: #333;
+      }
+
+      #demo {
+        color: #555;
+        font-size: 18px;
+        margin: 20px;
+        padding: 10px;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        transition: color 0.5s;
+      }
+
+      button {
+        background-color: #007bff;
+        color: #fff;
+        padding: 10px 20px;
+        font-size: 16px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.5s;
+      }
+
+      button:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>What Can JavaScript Do?</h1>
+    <p id="demo">Click the button below to see what JavaScript can do.</p>
+    <button type="button" onclick="myFunction()">Click Me!</button>
+    <script>
+      function myFunction() {
+        var demoElement = document.getElementById("demo");
+        demoElement.innerHTML =
+          "JavaScript can change the style of an HTML element.";
+        demoElement.style.color = "#007BFF";
+      }
+    </script>
+  </body>
+</html>
